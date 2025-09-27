@@ -62,12 +62,29 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Option 1: Deploy with Lovable (Recommended for Lovable projects)
+
 Simply open [Lovable](https://lovable.dev/projects/9b9652a1-d281-46ad-8b6c-2d3e577cfdd9) and click on Share -> Publish.
+
+### Option 2: Deploy to GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions.
+
+**Quick Setup:**
+1. Go to your repository **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Push to the `main` branch to trigger automatic deployment
+
+Your app will be available at: `https://[your-username].github.io/xplatform/`
 
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
 
+### For Lovable deployment:
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+### For GitHub Pages deployment:
+Add a `CNAME` file to the `public/` directory with your domain name and configure your DNS settings. See [DEPLOYMENT.md](./DEPLOYMENT.md) for more details.
